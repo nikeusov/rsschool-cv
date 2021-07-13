@@ -1,0 +1,11 @@
+.container {
+    width: 1000px;    
+    height: 800px; /*TODO: потом удалить */
+    padding: 20px 30px;
+    margin: 0 auto;
+    background: #cccccc;
+}
+
+.main-title{
+    text-align: center;
+}
