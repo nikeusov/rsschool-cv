@@ -1,11 +1,42 @@
 .container {
-    width: 1000px;    
-    height: 800px; /*TODO: потом удалить */
+    max-width: 620px;   
+    height: 700px; /*TODO: потом удалить */
     padding: 20px 30px;
     margin: 0 auto;
-    background: #cccccc;
+    background: #474343;
+    border: 1px solid transparent;
+    box-shadow:  0 0 100px rgb(0, 0, 0);
 }
 
 .main-title{
-    text-align: center;
+    text-align: left;
+}
+
+.header{
+    display: flex;
+}
+.block-left{
+    float: left;
+    margin-left: 0%;
+    width: 45%;
+}
+
+.block-right{
+    float: right;
+}
+
+.cast{
+    text-align: left;
+}
+
+.list{
+    margin-left: auto;
+}
+
+li{
+    list-style-type: none;
+}
+
+.contact{
+    
 }
