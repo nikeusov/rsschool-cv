@@ -9,67 +9,77 @@
 </head>
 <body>
     <div class="container">
-        
-        <header class="header">
+        <div class="content">
+            <header class="header">
                 <div class="block-left">
                     <div class="photo">
-                        <div class="photo_in">
-                            <div class="img">
-                                <img src="/rsschool-cv/img/profile.jpg" alt="Profile photo" width="220px" height="210px">
-                            </div>
+                        <div class="photo__inner">                            
+                            <img src="/rsschool-cv/img/profile.jpg" alt="Profile photo" width="220px" height="210px">
                         </div>
                     </div>
                 </div>
                 <div class="block-right">
-                    <h1 class="main-title">Nikita Usov</h1>
-                    <h4 class="cast">Frontend developer</h4>
-                        Hello! I really want to become a web developer. 
-                        At the moment I am learning HTML, CSS, Git & JS. 
-                        I plan to study PHP in the future. 
-                        I have a great desire to participate in team development on commercial projects and fully master my stack.
+                    <h1>Nikita <span>Usov</span></h1>
+                    <h4 class="cast">Frontend developer (Very Junior)</h4>                        
                 </div>
-        </header>
-        <main>
-            <div class="cont1">
-                <div class="block-left-main">
-                <div class="contact">
-                    <h3>Contact</h3>
-                    <ul class="list">
-                       <li>E-mail - nikotin331765115@gmail.com</li>
-                       <li>Github - <a class="agit" href="https://github.com/nikeusov" title="Nike`s Githab" target="_blank">@nikeusov</a></li>
-                       <li>WhatsApp & Telegram - +7 (918) 369-74-33</li>
-                    </ul>
+            </header>
+            <main class="main">                
+                <div class="block-left">
+                    <div class="contact">
+                        <h3>Contact</h3>
+                        <ul class="list">
+                            <li>E-mail - nikotin331765115@gmail.com</li>
+                            <li>Github - <a class="agit" href="https://github.com/nikeusov" title="Nike`s Githab" target="blank">@nikeusov</a></li>
+                            <li>WhatsApp & Telegram - <br>
+                                +7 (918) 369-74-33</li>
+                        </ul>
+                    </div>
+                    <div class="exp">
+                        <h3>Experience</h3>
+                        <p>
+                             Unfortunately, I have no experience in IT
+                        </p>                           
+                    </div> 
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>HMTL</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>                   
                 </div>
-                <div class="exp">
-                    <h3>Experience</h3>
-                        Unfortunately, I have no experience in IT
-                </div>
-                <div class="ecode">
-                    <h3>ECode</h3>
-                        <!-- function digitize(number) {
-                            return String(number)
-                                    .split('')
-                                    .reverse()
-                                    .map(Number);
-                        }-->
-                </div>
-            </div>
-            <div class="block-right-main">
-                <div class="educ">
-                    <h3>Education</h3>
-                        Kuban State Technological University
-                        2014-2021 (Construction of unique buildings and structures)
-                </div>
-                <div class="skills">
-                    <h3>Skills</h3>
-                        HMTL
-                        CSS
-                        JS
-                        Git
-                </div>
-            </div>
-            </div>
-        </main>
+                <div class="block-right">
+                    <div class="about">
+                        <h3>About Me</h3>
+                        <p>
+                            Hello! I really want to become a web developer. 
+                            At the moment I am learning HTML, CSS, Git & JS. 
+                            I plan to study PHP in the future. 
+                            I have a great desire to participate in team development on commercial projects and fully master my stack.
+                        </p>
+                    </div>
+                    <div class="ecode">
+                        <h3>ECode</h3>
+                        <code>
+                            function digitize(number) { <br>
+                                return String(number).split('').reverse().map(Number);
+                                }
+                        </code>
+                    </div>
+                    <div class="educ">
+                        <h3>Education</h3>
+                        <p>
+                           Kuban State Technological University
+                            2014-2021 <br> (Construction of unique buildings and structures) 
+                        </p>                            
+                    </div>
+                </div>                
+            </main>
+        </div>
+        
+        
         <footer>
 
         </footer>
