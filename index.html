@@ -15,44 +15,55 @@
                 <div class="block-left">
                     <div class="photo">
                         <div class="photo__inner">                            
-                            <img src="/rsschool-cv/img/profile.jpg" alt="Profile photo" width="220px" height="210px">
+                            <img src="/rsschool-cv/img/profile.jpg" alt="Profile photo" width="220" height="210">
                         </div>
                     </div>
                 </div>
                 <div class="block-right">
                     <h1>Nikita <span>Usov</span></h1>
-                    <h4 class="cast">Frontend developer (Very Junior)</h4>                        
+                    <h4>Frontend developer (Pre Junior)</h4>                        
                 </div>
             </header>
             <main class="main">                
-                <div class="block-left">
-                    <div class="contact">
+                <aside class="block-left">
+                    <section class="section contact">
                         <h3>Contact</h3>
                         <ul class="list">
-                            <li class="email">E-mail - nikotin331765115@gmail.com</li>
-                            <li class="githab">Github - <a class="agit" href="https://github.com/nikeusov" title="Nike`s Githab" target="blank">@nikeusov</a></li>
-                            <li class="whatsapp">WhatsApp & Telegram - <br>
-                                +7 (918) 369-74-33</li>
+                            <li class="list__item icon-email">
+                                <p>E-mail - nikotin331765115@gmail.com</p>
+                            </li>
+                            <li class="list__item icon-githab">
+                                <p>GitHab - <a href="https://github.com/nikeusov" title="Nike`s Githab" target="blank">@nikeusov</a></p>
+                            </li>
+                            <li class="list__item icon-telegra">
+                                <p>Telegram - <a href="https://web.telegram.org/k/" title="Nike`s Githab" target="blank">@usovskiy26</a></p>
+                            </li>
+                            <li class="list__item icon-whats-app">
+                                <p><span class="no-wrap">WhatsApp </span> - <span class="no-wrap">+7 (918) 369-74-33</span></p>
+                            </li>
                         </ul>
-                    </div>
-                    <div class="exp">
-                        <h3>Experience</h3>
-                        <p>
-                             Unfortunately, I have no experience in IT
-                        </p>                           
-                    </div> 
-                    <div class="skills">
+                    </section>
+                    
+                    <section class="section skills">
                         <h3>Skills</h3>
-                        <ul class="list2">
-                            <li class="iconhtml">HMTL</li>
-                            <li class="iconcss">CSS</li>
-                            <li class="iconjs">JS</li>
-                            <li class="icongit">Git</li>
+                        <ul class="list">
+                            <li class="list__item icon-html">
+                                <p>HMTL</p>
+                            </li>
+                            <li class="list__item icon-css">
+                                <p>CSS</p>
+                            </li>
+                            <li class="list__item icon-js">
+                                <p>JS</p>
+                            </li>
+                            <li class="list__item icon-git">
+                                <p>Git</p>
+                            </li>
                         </ul>
-                    </div>                   
-                </div>
+                    </section>                   
+                </aside>
                 <div class="block-right">
-                    <div class="about">
+                    <section class="section about">
                         <h3>About Me</h3>
                         <p>
                             Hello! I really want to become a web developer. 
@@ -60,29 +71,39 @@
                             I plan to study PHP in the future. 
                             I have a great desire to participate in team development on commercial projects and fully master my stack.
                         </p>
-                    </div>
-                    <div class="ecode">
+                    </section>
+                    <section class="section experience">
+                        <h3>Experience</h3>
+                        <p>
+                             Unfortunately, I have no experience in IT
+                        </p>                           
+                    </section> 
+                    <section class="section ecode">
                         <h3>ECode</h3>
-                        <code>
-                            function digitize(number) { <br>
-                                return String(number).split('').reverse().map(Number);
-                                }
-                        </code>
-                    </div>
-                    <div class="educ">
+                        <pre class="code">
+function digitize(number) {
+  return <br>  String(number).split('').reverse().map(Number);
+}</pre>
+                    </section>
+                    <section class="section education">
                         <h3>Education</h3>
                         <p>
                            Kuban State Technological University
                             2014-2021 <br> (Construction of unique buildings and structures) 
                         </p>                            
-                    </div>
+                    </section>
                 </div>                
             </main>
         </div>
         
         
-        <footer>
-
+        <footer class="footer">
+            <a href="https://rs.school/js/" class="footer__link footer__link-rss" target="blank">
+                <img src="/rsschool-cv/img/rs-logo.png" alt="RS-Logo">
+            </a>            
+            <p class="footer__text">Nikita Usov Ⓒ2021</p>
+            <a href="https://github.com/nikeusov" class="footer__link footer__link-gh" target="blank">
+            </a> 
         </footer>
     </div>
 </body>

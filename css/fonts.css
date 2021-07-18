@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?c0lp50');
-  src:  url('../fonts/icomoon.eot?c0lp50#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?c0lp50') format('truetype'),
-    url('../fonts/icomoon.woff?c0lp50') format('woff'),
-    url('../fonts/icomoon.svg?c0lp50#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?p3wj9q');
+  src:  url('../fonts/icomoon.eot?p3wj9q#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?p3wj9q') format('truetype'),
+    url('../fonts/icomoon.woff?p3wj9q') format('woff'),
+    url('../fonts/icomoon.svg?p3wj9q#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,8 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-diamonds:before {
-  content: "\e919";
+.icon-git1:before {
+  content: "\e900";
+  color: #f05032;
+}
+.icon-css31:before {
+  content: "\e901";
+  color: #1572b6;
+}
+.icon-html5:before {
+  content: "\e902";
+  color: #e34f26;
+}
+.icon-node-dot-js:before {
+  content: "\e903";
+  color: #393;
 }
 .icon-mail4:before {
   content: "\ea86";
@@ -34,15 +47,9 @@
 .icon-whatsapp:before {
   content: "\ea93";
 }
+.icon-telegram:before {
+  content: "\ea95";
+}
 .icon-github:before {
   content: "\eab0";
-}
-.icon-html-five:before {
-  content: "\eae4";
-}
-.icon-css3:before {
-  content: "\eae6";
-}
-.icon-git:before {
-  content: "\eae7";
 }
