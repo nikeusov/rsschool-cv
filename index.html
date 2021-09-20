@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My CV</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,12 +14,38 @@
     <div class="container">
         <div class="content">
             <header class="header">
-                <div class="block-left">
-                    <div class="photo">
-                        <div class="photo__inner">                            
-                            <img src="/rsschool-cv/img/profile.jpg" alt="Profile photo" width="220" height="210">
-                        </div>
+                <div class="menu">
+                    <nav class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#about" class="nav__link">About Me</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#exp" class="nav__link">Experience</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#code" class="nav__link">ECode</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#educat" class="nav__link">Education</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="nav__burger">
+                        <div class="nav__burger-item"></div>
+                        <div class="nav__burger-item"></div>
+                        <div class="nav__burger-item"></div>
                     </div>
+                </div> 
+                <div class="block-left">
+                    <div class="left-wr">                                               
+                        <figure class="photo">
+                            <div class="photo__inner">                            
+                                <img src="img/profile.jpg" alt="Profile photo" width="220" height="210">
+                            </div>
+                        </figure>
+                    </div>
+                    
                 </div>
                 <div class="block-right">
                     <h1>Nikita <span>Usov</span></h1>
@@ -60,10 +88,21 @@
                                 <p>Git</p>
                             </li>
                         </ul>
+                    </section>
+                    <section class="section skills">
+                        <h3>Language</h3>
+                        <ul class="list">
+                            <li class="list__item">
+                                <p>Russian - perfect knowledge with jargon</p>
+                            </li>
+                            <li class="list__item">
+                                <p>English - В2</p>
+                            </li>
+                        </ul>
                     </section>                   
                 </aside>
                 <div class="block-right">
-                    <section class="section about">
+                    <section class="section about" id="about">
                         <h3>About Me</h3>
                         <p>
                             Hello! I really want to become a web developer. 
@@ -72,23 +111,43 @@
                             I have a great desire to participate in team development on commercial projects and fully master my stack.
                         </p>
                     </section>
-                    <section class="section experience">
+                    <section class="section experience" id="exp">
                         <h3>Experience</h3>
-                        <p>
-                             Unfortunately, I have no experience in IT
-                        </p>                           
+                        <div class="experience__wr">
+                            <div class="experience__item">
+                                <h4 class="experience__item-title">LLC "Stroytekh"</h4>
+                                <a href="https://nikhub.ru/com/stroy/index.html" class="experience__item-link" target="_blank">
+                                    <img src="img/screen-1.jpg" alt="link" width="1290" height="906">
+                                </a>
+                            </div>
+                            <div class="experience__item">
+                                <h4 class="experience__item-title">Moscow guild of law</h4>
+                                <a href="https://gildiyaprava.ru/confidentiality.php" class="experience__item-link" target="_blank">
+                                    <img src="img/screen-2.jpg" alt="link" width="1684" height="929">
+                                </a>
+                            </div>
+                            <div class="experience__item">
+                                <h4 class="experience__item-title">Dinskaya bagkotary factory</h4>
+                                <a href="https://nikhub.ru/train/din-bag/" class="experience__item-link" target="_blank">
+                                    <img src="img/screen-3.jpg" alt="link" width="1493" height="902">
+                                </a>
+                            </div>
+                            </div>
                     </section> 
-                    <section class="section ecode">
+                    <section class="section ecode" id="code">
                         <h3>ECode</h3>
                         <pre class="code">
-function digitize(number) {
-  return <br>  String(number).split('').reverse().map(Number);
-}</pre>
+                            <code class="js">
+                                function digitize(n) {
+                                    return String(n).split('').reverse().map(Number);
+                                }
+                            </code>
+                        </pre>
                     </section>
-                    <section class="section education">
+                    <section class="section education" id="educat">
                         <h3>Education</h3>
                         <p>
-                           Kuban State Technological University
+                            Kuban State Technological University
                             2014-2021 <br> (Construction of unique buildings and structures) 
                         </p>                            
                     </section>
@@ -99,12 +158,17 @@ function digitize(number) {
         
         <footer class="footer">
             <a href="https://rs.school/js/" class="footer__link footer__link-rss" target="blank">
-                <img src="/rsschool-cv/img/rs-logo.png" alt="RS-Logo">
+                <img src="/img/rs-logo.png" alt="RS-Logo">
             </a>            
             <p class="footer__text">Nikita Usov Ⓒ2021</p>
             <a href="https://github.com/nikeusov" class="footer__link footer__link-gh" target="blank">
             </a> 
         </footer>
     </div>
+
+    <script src="main.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 </html>
